@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiMainNet Launcher (PMNL)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#launch">Launch</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to PiMainNet Launcher (PMNL)</h1>
+            <p>Launch your PiMainNet experience with ease.</p>
+            <button id="launch-btn">Launch PiMainNet</button>
+        </section>
+        <section id="launch">
+            <h2>Launch PiMainNet</h2>
+            <form>
+                <label for="node-url">Node URL:</label>
+                <input type="url" id="node-url" placeholder="https://example.com/node">
+                <label for="wallet-address">Wallet Address:</label>
+                <input type="text" id="wallet-address" placeholder="0x...">
+                <button id="launch-pmnl-btn">Launch PiMainNet</button>
+            </form>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <form>
+                <label for="theme">Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                <button id="save-settings-btn">Save Settings</button>
+            </form>
+        </section>
+        <section id="about">
+            <h2>About PiMainNet Launcher (PMNL)</h2>
+            <p>PMNL is a cutting-edge launcher for the PiMainNet ecosystem.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
